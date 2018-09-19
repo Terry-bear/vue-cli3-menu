@@ -1,0 +1,19 @@
+.app-wrapper {
+  overflow: hidden;
+}
+.left-wrapper {
+  transition: width 0.28s;
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.all-transition {
+  transition: margin-left 0.28s;
+}
