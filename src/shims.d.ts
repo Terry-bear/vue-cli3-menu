@@ -4,3 +4,4 @@ declare module '*.vue' {
 }
 
 declare module 'element-ui'
+declare module 'element-ui/lib/locale/lang/zh-CN'

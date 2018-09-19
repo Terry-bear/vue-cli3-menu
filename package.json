@@ -2,14 +2,13 @@
   "name": "front-end-menu",
   "version": "0.1.0",
   "private": true,
-  "description": "Base on vue-cli3 typescript to refactory people data menu integration",
-  "author": "Terry Zheng <496971418@qq.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "element-ui": "^2.4.7",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
@@ -26,6 +25,8 @@
     "vue-cli-plugin-element-ui": "^1.1.4",
     "vue-template-compiler": "^2.5.17"
   },
+  "description": "Base on vue-cli3 typescript to refactory people data menu integration",
+  "author": "Terry Zheng <496971418@qq.com>",
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 5.0.0"
