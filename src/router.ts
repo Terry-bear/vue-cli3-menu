@@ -3,9 +3,12 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 // 路由跳转前的勾子函数，可做权限验证、动画、浏览器导航历史记录等
 import beforeEachHooks from './before-each-hooks'
-// 根据目标项目确定路由位置
-const routes = require(`./${process.env.TARGET_PROJECT}`).default
 
+import * as r from './views/index'
+// 根据目标项目确定路由位置
+//  todo ${process.env.TARGET_PROJECT}
+const routes = r.default
+console.log(process.env)
 Vue.use(Router)
 
 const router = new Router({

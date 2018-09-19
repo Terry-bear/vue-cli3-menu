@@ -16,5 +16,10 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
     HelloWorld
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  private radio: number = 1
+  private testMethod() {
+    console.log('object')
+  }
+}
 </script>
