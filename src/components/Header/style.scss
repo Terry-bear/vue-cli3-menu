@@ -1,0 +1,214 @@
+// 消息css
+.notify-entrance-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 97px;
+  float: left;
+  list-style: none;
+  background-color: #fff;
+  color: #191d21;
+  background-clip: padding-box;
+  z-index: 9;
+  font-size: 12px;
+  min-width: 288px;
+  margin: 0;
+  border: none;
+  transition: opacity 0.15s, visibility 0s 0.15s;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  // height: 377px;
+  .notify-entrance-list {
+    margin: {
+      top: 5px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+    padding: 0;
+    li {
+      padding: 12px 24px;
+      border-bottom: 1px solid #d3d7d9;
+      list-style: none;
+      p {
+        margin: 0;
+        margin-bottom:4px;
+        font-size: 14px;
+        &:hover {
+          color: #007eef;
+          cursor: pointer;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+      }
+      span{
+        color: rgba(0, 0, 0, 0.45);
+        cursor: default;
+      }
+    }
+  }
+  .notify-no-msg {
+    height: 190px;
+    line-height: 190px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .notify-more-msg{
+    height: 40px;
+    width: 288px;
+    text-align: center;
+    line-height: 40px;
+    &:hover{
+      color: #007eef;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+  a {
+    color: #333744;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      color: #007eef;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+// 头像css
+.user-entrance-dropdown {
+  position: fixed;
+  background-color: #fff;
+  height: auto;
+  width: 270px;
+  right: 0;
+  top: 48px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.user-entrance-user-info {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+.user-entrance-list {
+  overflow: hidden;
+  width: 238px;
+  margin: 16px 16px;
+  padding: 0px;
+  font-size: 14px;
+}
+.user-entrance-list li {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+  padding: 10.5px 0px;
+  cursor: pointer;
+}
+.user-entrance-list li:hover {
+  background: #f5f5f5;
+}
+
+.header-wrapper {
+  background: #333744;
+  .header-right-wrapper {
+    float: right;
+    height: 100%;
+    display: table;
+    .header-right-line {
+      height: 100%;
+      background: #2a2f32;
+      width: 1px;
+    }
+    .header-right-box {
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10px;
+      padding-right: 10px;
+      .is-fixed {
+        transform: translateY(10%) translateX(40%);
+      }
+    }
+  }
+}
+.demo-input-suffix {
+  padding-bottom: 10px;
+}
+
+.header-placeholder-class .el-form-item__content .el-input__inner {
+  border: 1px solid rgba(64, 158, 255, 0.2);
+}
+
+.header-placeholder-class
+  .el-form-item__content
+  .el-input.is-disabled
+  .el-input__inner {
+  background-color: #fff;
+  border: 1px solid rgba(64, 158, 255, 0.2);
+  color: #606266;
+  cursor: default;
+}
+.header-placeholder-class .el-form-item.is-success .el-input__inner {
+  border: 1px solid rgba(64, 158, 255, 0.2);
+}
+
+.header-placeholder-class .el-form-item.is-error .el-input__inner {
+  border-color: #f56c6c;
+}
+
+.header-placeholder-class
+  .el-form-item.is-required
+  .el-form-item__label:before {
+  content: '';
+}
+
+.header-placeholder-class .el-form-item__content .el-card {
+  background-color: #fff;
+  border: 1px solid rgba(64, 158, 255, 0.2);
+  color: #606266;
+}
+
+.header-placeholder-class .el-form {
+  .el-form-item {
+    margin-bottom: 15px;
+  }
+}
+.header-placeholder-class .el-dialog {
+  .el-dialog__body {
+    text-align: center;
+  }
+}
+
+.header-placeholder-class .el-dialog {
+  margin-top: 58px !important;
+  margin-bottom: 10px !important;
+  min-height: 450px;
+  .el-dialog__body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.bottomBtn > div {
+  margin-left: 0px !important;
+  text-align: center;
+}
+
+.user-phone-num > input {
+  background-color: #fff !important;
+  color: #606266 !important;
+}

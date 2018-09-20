@@ -1,17 +1,20 @@
+$topZIndex: 99999px;
+$buttomZIndex: -99999px;
+
 .app-wrapper {
   overflow: hidden;
 }
 .left-wrapper {
   transition: width 0.28s;
   float: left;
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
+  margin-bottom: $buttomZIndex;
+  padding-bottom: $topZIndex;
   overflow: hidden;
 }
 
 .main-wrapper {
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
+  margin-bottom: $buttomZIndex;
+  padding-bottom: $topZIndex;
 }
 
 .all-transition {
