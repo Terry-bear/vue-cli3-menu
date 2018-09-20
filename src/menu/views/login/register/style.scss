@@ -1,0 +1,127 @@
+//宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+.god-wrapper {
+  @include wh(100%, 100%);
+  background-color: #f0f2f5 !important;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f5 !important;
+}
+.top-wrapper {
+  margin: {
+    top: 54px;
+    bottom: 24px;
+  }
+  @include wh(900px, 120px);
+  display: flex;
+  flex-direction: row;
+  img {
+    margin: {
+      left: 147px;
+    }
+  }
+}
+.title-wrapper {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    width: 216px;
+    height: 24px;
+    padding-top: 64px;
+    span {
+      font-size: 24px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 24px;
+    }
+  }
+  .title-content {
+    width: 222px;
+    height: 24px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px;
+  }
+}
+.statement {
+  margin: {
+    top: 96px;
+    left: 78px;
+  }
+  width: 152px;
+  height: 24px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 24px;
+}
+.content-wrapper {
+  width: 900px;
+  margin-bottom: 77px;
+  background-color: #fff;
+  .content-main {
+    margin: 0 auto;
+    margin-bottom: 95px;
+    width: 608px;
+  }
+}
+.check-statement {
+  margin: {
+    left: 138px;
+    bottom: 16px;
+  }
+}
+.back-login-btn {
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #1890ff;
+  line-height: 22px;
+  cursor: pointer;
+}
+.complete-content {
+  @include wh(220px, 240px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    @include wh(72px, 72px);
+  }
+  .complete-title {
+    width: 192px;
+    height: 32px;
+    font-size: 24px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 32px;
+  }
+  .complete-container {
+    width: 219px;
+    height: 22px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.43);
+    line-height: 22px;
+  }
+}
+.statement-pages {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 22px;
+}
