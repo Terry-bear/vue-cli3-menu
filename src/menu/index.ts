@@ -8,25 +8,25 @@ Vue.use(ElementUI, { locale })
 
 // TODO Layout including header and sideBar
 const Layout = (r: any) =>
-  (require as any).ensure([], () => r(require('@/components/Layout'), 'index')) // Layout
+  (require as any).ensure([], () => r(require('@/components/Layout/Layout'), 'index')) // Layout
 const Header = (r: any) =>
-  (require as any).ensure([], () => r(require('./view/index/Header'), 'index')) // Header
+  (require as any).ensure([], () => r(require('@/components/Header/Header'), 'index')) // Header
 const Side = (r: any) =>
-  (require as any).ensure([], () => r(require('./view/components/Side'), 'index')) // Side
+  (require as any).ensure([], () => r(require('@/components/Side/Side'), 'index')) // Side
 
 // TODO content framework
 const MainContent = (r: any) =>
-  (require as any).ensure([], () => r(require('@/components/MainContent'), 'index')) // MainContent
+  (require as any).ensure([], () => r(require('@/components/MainContent/MainContent'), 'index')) // MainContent
 const error = (r: any) =>
-  (require as any).ensure([], () => r(require('@/components/404'), 'error')) // Header
+  (require as any).ensure([], () => r(require('@/components/Error/Error'), 'error')) // Header
 
 // TODO login page including register and index pages
 const login = (r: any) =>
-  (require as any).ensure([], () => r(require('./view/login/index'), 'login')) // Header
+  (require as any).ensure([], () => r(require('@/menu/views/login/login'), 'login')) // Header
 const register = (r: any) =>
-  (require as any).ensure([], () => r(require('./view/login/register'), 'register')) // Header
+  (require as any).ensure([], () => r(require('@/menu/views/login/register/register'), 'register')) // Header
 const index = (r: any) =>
-  (require as any).ensure([], () => r(require('./view/index/index'), 'index')) // Header
+  (require as any).ensure([], () => r(require('@/menu/views/index/index'), 'index')) // Header
 
 export default [
   {
